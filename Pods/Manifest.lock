@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.9.1)
+  - FDFullscreenPopGesture (1.1)
+  - IQKeyboardManagerSwift (6.5.5)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.3.1)
+  - ObjectMapper (3.5.1)
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+  - "UITextView+Placeholder (1.4.0)"
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - FDFullscreenPopGesture
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MJRefresh
+  - ObjectMapper
+  - SnapKit
+  - SVProgressHUD
+  - SwiftyJSON
+  - "UITextView+Placeholder"
+  - YYText
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - FDFullscreenPopGesture
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MJRefresh
+    - ObjectMapper
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyJSON
+    - "UITextView+Placeholder"
+    - YYText
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 6f17b7bf2df5899accc86752d00d71079f01c28c
+
+COCOAPODS: 1.9.1
