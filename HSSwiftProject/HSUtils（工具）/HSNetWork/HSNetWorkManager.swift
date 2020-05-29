@@ -39,6 +39,16 @@ class HSNetWorkManager: NSObject {
 
 // MARK: 公用调用方法
 extension HSNetWorkManager {
+    
+    /// 普通请求
+    /// - Parameters:
+    ///   - url: url 建议通过HSBaseApi生成
+    ///   - parameters: 参数列表
+    ///   - header: header
+    ///   - method: 请求方法
+    ///   - baseModel: 返回的model类型（需遵循Mappable）
+    ///   - success: 成功回调(baseModel,json)
+    ///   - failed: 失败回调(HSError)
     func request<T: Mappable>(url: String, parameters: [String: Any]? = nil, header: HTTPHeaders? = nil, method : HTTPMethod? = .get, baseModel: T.Type, success: @escaping NetSuccessBlock<T>, failed: @escaping NetFailedBlock) -> Void {
         
         let header1 = header ?? HSDefaultHeader.defaultHeader()
