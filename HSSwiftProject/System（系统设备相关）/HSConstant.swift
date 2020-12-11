@@ -31,3 +31,4 @@ let HS_IPHONE_TOPSENSOR_HEIGHT      = (HS_IS_IPHONE_X_ALL ? 32 : 0) as CGFloat
 let HS_IPHONE_TABBAR_HEIGHT        = (HS_IS_IPHONE_X_ALL ? 49 + 34 : 49) as CGFloat
 
 
+let screenWidth = UIScreen.main.bounds.width

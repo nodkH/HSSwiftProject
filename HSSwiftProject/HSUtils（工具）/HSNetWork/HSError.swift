@@ -8,8 +8,9 @@
 
 import UIKit
 
-class HSError: NSObject {
+struct HSError: Error {
     var code : Int?
     var message : String = ""
     var error = NSError()
+    
 }

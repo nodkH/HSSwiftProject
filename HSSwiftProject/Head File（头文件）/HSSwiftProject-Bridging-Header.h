@@ -8,4 +8,11 @@
 #import "HSValidate.h"
 #import "HSPermissionManager.h"
 #import "UIImage+HSImage.h"
+
+
+
+
+//#import <WechatOpenSDK/WXApi.h>
+
+
 @import UITextView_Placeholder;

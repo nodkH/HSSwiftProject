@@ -26,12 +26,6 @@ var HSNetWorkVersion: String {
 let Alamafire_TimeoutIntervalForRequest:TimeInterval = 10
 
 
-////MARK: - 所有请求都会带的东西比如 版本和 cookie
-//var HSDefaultHeader: [String:String] {
-//    get {
-//
-//    }
-//}
 
 class HSDefaultHeader: NSObject {
     static func defaultHeader() -> [String : String] {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6A74FF7F8AE00214D1EAED5 /* Pods_HSSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5202EA790991B0C6F0D96B57 /* Pods_HSSwiftProject.framework */; };
+		D50C7AEC24C976BB0008D346 /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C7AEB24C976BB0008D346 /* CustomModel.swift */; };
 		D513753424725777008DBD4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D513753324725777008DBD4A /* AppDelegate.swift */; };
 		D513753824725777008DBD4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D513753724725777008DBD4A /* ViewController.swift */; };
 		D513753D24725779008DBD4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D513753C24725779008DBD4A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		D531555B247FADF000769485 /* HSNetWorkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531555A247FADF000769485 /* HSNetWorkConfig.swift */; };
 		D531555D247FB3D600769485 /* HSBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531555C247FB3D600769485 /* HSBaseApi.swift */; };
 		D531555F247FB52900769485 /* myModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531555E247FB52900769485 /* myModel.swift */; };
+		D53F69AF2490BFD60012151E /* HSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F69AE2490BFD60012151E /* HSTabBarController.swift */; };
 		D5E83AE22480B543005896D3 /* BaseModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E83AE12480B543005896D3 /* BaseModel2.swift */; };
 		D5E83AED2480D3FE005896D3 /* UIImage+GIFy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E83AE52480D3FE005896D3 /* UIImage+GIFy.m */; };
 		D5E83AEE2480D3FE005896D3 /* HSPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E83AE72480D3FE005896D3 /* HSPermissionManager.m */; };
@@ -36,10 +38,24 @@
 		D5E83B072480D721005896D3 /* HSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E83B062480D721005896D3 /* HSNavigationController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D52E588B2520787700FEAD34 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		048D48C3884F97AF83DEDA7B /* Pods-HSSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-HSSwiftProject/Pods-HSSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		1454B32713161C561C06B4E8 /* Pods-HSSwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSSwiftProject.release.xcconfig"; path = "Target Support Files/Pods-HSSwiftProject/Pods-HSSwiftProject.release.xcconfig"; sourceTree = "<group>"; };
 		5202EA790991B0C6F0D96B57 /* Pods_HSSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50C7AEB24C976BB0008D346 /* CustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModel.swift; sourceTree = "<group>"; };
 		D513753024725777008DBD4A /* HSSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D513753324725777008DBD4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D513753724725777008DBD4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,12 +63,15 @@
 		D513753F24725779008DBD4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D513754124725779008DBD4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D513754724725CE0008DBD4A /* HSNetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSNetWorkManager.swift; sourceTree = "<group>"; };
+		D52E587E2520787600FEAD34 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D52E58802520787600FEAD34 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D5315553247F8A5A00769485 /* HSRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSRequestType.swift; sourceTree = "<group>"; };
 		D5315555247F94D200769485 /* HSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSError.swift; sourceTree = "<group>"; };
 		D5315557247F97CB00769485 /* HSBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSBaseModel.swift; sourceTree = "<group>"; };
 		D531555A247FADF000769485 /* HSNetWorkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSNetWorkConfig.swift; sourceTree = "<group>"; };
 		D531555C247FB3D600769485 /* HSBaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSBaseApi.swift; sourceTree = "<group>"; };
 		D531555E247FB52900769485 /* myModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myModel.swift; sourceTree = "<group>"; };
+		D53F69AE2490BFD60012151E /* HSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSTabBarController.swift; sourceTree = "<group>"; };
 		D5E83AE12480B543005896D3 /* BaseModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel2.swift; sourceTree = "<group>"; };
 		D5E83AE42480D3FD005896D3 /* HSSwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSSwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		D5E83AE52480D3FE005896D3 /* UIImage+GIFy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIFy.m"; sourceTree = "<group>"; };
@@ -100,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				5202EA790991B0C6F0D96B57 /* Pods_HSSwiftProject.framework */,
+				D52E587E2520787600FEAD34 /* WidgetKit.framework */,
+				D52E58802520787600FEAD34 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +146,7 @@
 		D513753224725777008DBD4A /* HSSwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				D5F60B0D24A065BE00EE91E8 /* Head File（头文件） */,
 				D5E83B052480D70E005896D3 /* BaseClass（基类） */,
 				D5E83AF42480D65B005896D3 /* Extension（分类） */,
 				D5E83AF12480D5F3005896D3 /* System（系统设备相关） */,
@@ -132,6 +154,7 @@
 				D513754924725D23008DBD4A /* HSUtils（工具） */,
 				D513753324725777008DBD4A /* AppDelegate.swift */,
 				D513753724725777008DBD4A /* ViewController.swift */,
+				D50C7AEB24C976BB0008D346 /* CustomModel.swift */,
 				D513753E24725779008DBD4A /* LaunchScreen.storyboard */,
 				D513753C24725779008DBD4A /* Assets.xcassets */,
 				D513754124725779008DBD4A /* Info.plist */,
@@ -189,7 +212,6 @@
 				D5E83AE52480D3FE005896D3 /* UIImage+GIFy.m */,
 				D5E83AE92480D3FE005896D3 /* UIImage+HSImage.h */,
 				D5E83AEA2480D3FE005896D3 /* UIImage+HSImage.m */,
-				D5E83AE42480D3FD005896D3 /* HSSwiftProject-Bridging-Header.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -221,8 +243,17 @@
 			isa = PBXGroup;
 			children = (
 				D5E83B062480D721005896D3 /* HSNavigationController.swift */,
+				D53F69AE2490BFD60012151E /* HSTabBarController.swift */,
 			);
 			path = "BaseClass（基类）";
+			sourceTree = "<group>";
+		};
+		D5F60B0D24A065BE00EE91E8 /* Head File（头文件） */ = {
+			isa = PBXGroup;
+			children = (
+				D5E83AE42480D3FD005896D3 /* HSSwiftProject-Bridging-Header.h */,
+			);
+			path = "Head File（头文件）";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +268,7 @@
 				D513752D24725777008DBD4A /* Frameworks */,
 				D513752E24725777008DBD4A /* Resources */,
 				831C55C4945DF9C48913C922 /* [CP] Embed Pods Frameworks */,
+				D52E588B2520787700FEAD34 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -253,7 +285,7 @@
 		D513752824725777008DBD4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "孔祥刚";
 				TargetAttributes = {
@@ -354,6 +386,7 @@
 				D5E83AFF2480D66E005896D3 /* UITableView+extension.swift in Sources */,
 				D5E83AE22480B543005896D3 /* BaseModel2.swift in Sources */,
 				D531555F247FB52900769485 /* myModel.swift in Sources */,
+				D53F69AF2490BFD60012151E /* HSTabBarController.swift in Sources */,
 				D5E83B072480D721005896D3 /* HSNavigationController.swift in Sources */,
 				D5315558247F97CB00769485 /* HSBaseModel.swift in Sources */,
 				D5E83AED2480D3FE005896D3 /* UIImage+GIFy.m in Sources */,
@@ -362,6 +395,7 @@
 				D5E83AEE2480D3FE005896D3 /* HSPermissionManager.m in Sources */,
 				D5E83AFD2480D66E005896D3 /* SVProgressExtension.swift in Sources */,
 				D5E83B012480D66E005896D3 /* HSResponderExtension.swift in Sources */,
+				D50C7AEC24C976BB0008D346 /* CustomModel.swift in Sources */,
 				D5E83B032480D66E005896D3 /* StringExtension.swift in Sources */,
 				D5E83B022480D66E005896D3 /* HSUIColorExtension.swift in Sources */,
 			);
@@ -504,13 +538,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K2GZ3VBPD;
 				INFOPLIST_FILE = HSSwiftProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kongxianggang.HSSwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HSSwiftProject/HSUtils（工具）/utils/HSSwiftProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HSSwiftProject/Head File（头文件）/HSSwiftProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -526,13 +561,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8K2GZ3VBPD;
 				INFOPLIST_FILE = HSSwiftProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kongxianggang.HSSwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HSSwiftProject/HSUtils（工具）/utils/HSSwiftProject-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "HSSwiftProject/Head File（头文件）/HSSwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

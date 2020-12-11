@@ -47,11 +47,26 @@ class ViewController: UIViewController {
         
         let url =  String(system: .by) + "?act=goods&op=get_goods_detail_voucher&goods_id=877780031&from_client=app&key=40979c565f786cb918601ebf0582dba0"
         
-        HSNetWorkManager.shared.request(url: String(system: .by), parameters: parameters, baseModel: BaseModel2.self, success: { (baseModel, json) in
-            print(json)
-        }) { (error) in
-            print(error.message)
+        HSNetWorkManager.shared.request(url: url, parameters: parameters, baseModel: BaseModel2.self) { (result) in
+            switch result {
+            case .success(let model, let json):
+                print(json)
+                break
+            
+            case .failure(let error):
+                print(error.message)
+                print(error.error.localizedDescription)
+                break
+                
+            }
+            
         }
+
+//        HSNetWorkManager.shared.request(url: String(system: .by), parameters: parameters, baseModel: BaseModel2.self, success: { (baseModel, json) in
+//            print(json)
+//        }) { (error) in
+//            print(error.message)
+//        }
 
         
     }
@@ -62,18 +77,40 @@ class ViewController: UIViewController {
             "userId" : "aeb4572975c14f1899d375f1caf3ad83",
             "content" : "fdd"
         ] as [String : Any]
-        HSNetWorkManager.shared.request(url: String(system: .post) + "question/issue",  parameters: parameters, method: .post, baseModel: HSBaseModel.self, success: { [weak self](baseModel, json) in
-            if baseModel.isSuccess == true {
-                baseModel.result?["content"]
-                let resultModel = postModel(JSON: baseModel.result ?? [String : Any]())
-                print(resultModel?.content)
-                
-            } else {
-                print(baseModel.msg)
+        
+        HSNetWorkManager.shared.request(url: String(system: .post) + "question/issue", parameters: parameters, method: .post, baseModel: HSBaseModel.self) { (result) in
+            switch result {
+            case .success(let model, let json):
+                if model.isSuccess == true {
+                    if let result = model.result {
+                        let resultModel = postModel(JSON: result)
+                        print(resultModel?.content)
+                    }
+                    
+                    
+                }else {
+                    print(model.msg)
+                }
+                break
+            case .failure(let error):
+                print(error.message)
+                print(error.error.localizedDescription)
+                break
             }
-        }) { (error) in
-            print(error.message)
         }
+        
+//        HSNetWorkManager.shared.request(url: String(system: .post) + "question/issue",  parameters: parameters, method: .post, baseModel: HSBaseModel.self, success: { [weak self](baseModel, json) in
+//            if baseModel.isSuccess == true {
+//                baseModel.result?["content"]
+//                let resultModel = postModel(JSON: baseModel.result ?? [String : Any]())
+//                print(resultModel?.content)
+//
+//            } else {
+//                print(baseModel.msg)
+//            }
+//        }) { (error) in
+//            print(error.message)
+//        }
         
 //        let type = HSRequestType()
         
